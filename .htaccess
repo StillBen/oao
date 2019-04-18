@@ -1,0 +1,29 @@
+
+RewriteOptions inherit
+# Use PHP5.4 as default
+# Changed PHP handler from application/x-httpd-php54 to application/x-httpd-phpbeta on Mon Jan 11 21:57:11 MST 2016.
+AddHandler application/x-httpd-phpbeta .php
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# following 2 lines added for new custom nfiles
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# add a trailing slash to /wp-admin
+RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+RewriteRule . index.php [L]
+</IfModule>
+
+# END WordPress
