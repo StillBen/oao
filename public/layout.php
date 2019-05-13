@@ -8,443 +8,60 @@
 $pages = array(
 	'home' => array(
 		'bgimage' => 'home_page_background.png',
-
-		'content' =>	<<<ENDHTML
-
-		<div class="photobox">
-			<div class="prevphoto">
-			Previous Event
-			</div>
-
-			<div class="mainphoto">
-				[MAINPHOTO]
-			</div>
-
-			<div class="nextphoto">
-			Next Event
-			</div>
-
-			<div style="clear: both"></div>
-		</div><!-- photobox -->
-
-		<div class="lowerbanner">
-			WHAT IS OCCURING <br />
-			BRUCE BANNER RINGS <br />
-			TOTALLY AWESOME <br />
-		</div>
-
-		<div class="tabgroup">
-			<div class="tabheader">
-				<h2>TEMPLE</h2>
-			</div>
-			<div class="tabheader">
-				<h2>LIBRARY</h2>
-			</div>
-
-			<div style="clear: both"></div>
-		</div> <!-- tabgroup -->
-ENDHTML
-,
+		'contentfile' => 'home.php',
 	),
 
 	'coven' => array(
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				RIDING THE WHEEL OF THE YEAR<br />
-				WETRASTIGUREANDADAPT<br />
-				TOGETHER<br />
-			</div>
-
-			<ul>
-				<li>Private Ceremonies Shamanic</li>
-				<li>
-					Classes &amp Services<br />
-					101 - 103<br />
-					Tarot PLR
-				</li>
-				<li>
-					Retreats &amp Travel<br />
-					Commances, Temple, Healing Centers and Pagan Gatherings
-				</li>
-				<li>
-					Items of Spiritual<br />
-					Necessity + Spellcraft Provided
-				</li>
-				<li>
-					Coven Group Therapy<br />
-					every Mon + Thursday 5-7pm
-				</li>
-			</ul>
-
-
-ENDHTML
-,
+		'contentfile' => 'coven.php',
 	),
 
 	'training' => array(
-
-		'content' =>	<<<ENDHTML
-
-			<div class="banner">
-				EASTERN<br />
-				Hellanic Liberal<br />
-				STUDIES<br />
-			</div>
-
-			<ul>
-				<li>ye olde training</li>
-				<li>
-					Year of attendance<br />
-					getting to know you
-				</li>
-				<li>
-					Year of Self Exploration<br />
-					Linguistic Development
-				</li>
-				<li>
-					Year of Service
-				</li>
-				<li>
-					Year of Neophytic Devotion
-				</li>
-			</ul>
-
-
-			<div class="banner">
-				Clergy Training
-			</div>
-
-			<ul>
-				<li>
-					Neophyte Devotion<br />
-					History of Paganism
-				</li>
-				<li>
-					Council + Meditation Training<br />
-					Independent Accreditation
-				</li>
-				<li>
-					Ceremonial Leadership<br />
-					Shamanic Training<br />
-					Sweat - H.S. - Ceremonial Sauce
-				</li>
-				<li>
-					Teaching + Public outreach
-				</li>
-			</ul>
-
-
-			<div class="banner">
-				Temple Life
-			</div>
-
-			<ul>
-				<li>Residance</li>
-				<li>Community Support</li>
-				<li>Vows + Devotions</li>
-				<li>Multicultural</li>
-			</ul>
-
-			<div class="banner">
-				Hermitage + Travel
-			</div>
-
-			<ul>
-				<li>15 - 17 Years of Service</li>
-				<li>Cultural Experience</li>
-				<li>Withdrawl from ceremonial life</li>
-				<li>Botinal Studies</li>
-			</ul>
-ENDHTML
-,
+		'contentfile' => 'training.php',
 	),
 
 	'library' => array(
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				A GATHERING PLACE FOR LEARNING<br />
-				Haycusep's Library of Maat
-			</div>
-
-			<ul>
-				<li>OLDYZ But Goodies Open Library Day </li>
-				<li>Our Collection</li>
-				<li>How to Check Out Books</li>
-				<li>Book Club - Coven Led</li>
-				<li>Book of the month</li>
-				<li>Esoteric Books For Sale</li>
-				<li>Book Donations + Library Drop Offs</li>
-			</ul>
-
-
-ENDHTML
-,
+		'contentfile' => 'library.php',
 	),
 
 	'garden' => array(
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				TEMPLE ORCHARD + GARDENS
-			</div>
-
-			<ul>
-				<li>Map of the Grounds</li>
-				<li>Orchard</li>
-				<li>South Garden</li>
-				<li>West Garden</li>
-				<li>North Yard</li>
-				<li>May Pole</li>
-				<li>Chickens</li>
-				<li>Fire Pits</li>
-				<li>Back To Wildlands</li>
-				<li>Pet Cemetary</li>
-			</ul>
-
-
-ENDHTML
-,
+		'contentfile' => 'garden.php',
 	),
 
 	'kitchen' => array(
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				TEMPLE KITCHEN
-				WHAT'S COOKIN'
-			</div>
-
-			<div class="photobox">
-				<div class="prevphoto">
-				Last Baked
-				</div>
-
-				<div class="mainphoto">
-					[PHOTOS]
-				</div>
-
-				<div class="nextphoto">
-				Next Baked
-				</div>
-
-				<div style="clear: both"></div>
-			</div><!-- photobox -->
-
-			<div class="lowerbanner">
-				Quotes on Atwas in foods
-			</div>
-
-			<div class="tabgroup">
-				<div class="tabheader">
-					<h2>Seasonal Cusiene Guide</h2>
-				</div>
-				<div class="tabheader">
-					<h2>Ediquate</h2>
-				</div>
-
-				<div class="tabheader">
-					<h2>Recipes</h2>
-				</div>
-
-				<div style="clear: both"></div>
-			</div> <!-- tabgroup -->
-
-			<div class="credittext">
-					credits
-			</div>
-
-ENDHTML
-,
+		'contentfile' => 'kitchen.php',
 	),
 
 	'calendartoday' => array(
 
+		'contentfile' => 'calendartoday.php',
 		'bgimage' => 'calander_fairy_brightstar.png',
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				Calender -> Today's Magick Dashboard Lights
-			</div>
-
-			<div class="container">
-				<div class="astroblock">
-					<h1>Astro</h1>
-					<div class="box">
-						[wheel graphic]
-					</div>
-				</div>
-
-				<div class="moonsunblock">
-					<h1>Moon</h1>
-					<div class="box">
-						[box]
-					</div>
-
-					<h1>Sun</h1>
-					<div class="box">
-						[box]
-					</div>
-
-				</div>
-
-				<div style="clear: both"></div>
-
-			</div>
-
-			<div class="lowerbanner">
-				1am Planetary Hours
-			</div>
-
-			<div class="container">
-				<div class="tarotblock">
-				Tarot Card of the Day
-				</div>
-
-				<div class="spellblock">
-				Spell of the Day
-				</div>
-				<div style="clear: both"></div>
-			</div>
-
-ENDHTML
-,
 	),
 
 	'calendarmonth' => array(
 		'bgimage' => 'calender_fairy_purple.png',
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				Astro Info <br />
-				+<br />
-				IMAGE<br />
-			</div>
-
-			<div class="box">
-				#	
-			</div>
-
-ENDHTML
-,
+		'contentfile' => 'calendarmonth.php',
 	),
 
 	'astrology' => array(
 		'bgimage' => 'calander_teal_starlight.png',
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				Astrology
-			</div>
-
-			<pre>
-			Zodiac + Moons of the Year
-			By Sigil
-			v 12 button links to zodiac pages
-
-			plenets + days of the week
-
-			x 7
-
-			venus
-
-			Elehments + Physical Reality
-
-			Triplicity + Cosmology
-			</pre>
-			
-
-
-ENDHTML
-,
+		'contentfile' => 'astrology.php',
 	),
 
 	'yearly' => array(
 		'bgimage' => 'rose_bg_bluered.png',
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				Yearly + Yesteryearly
-			</div>
-
-			<pre>
-				calendar by month
-			</pre>
-			
-			<div class="lowerbanner">
-				Previous Years
-			</div>
-
-			<div class="lowerbanner">
-				Eastern Hellanic Hollidays
-			</div>
-
-
-ENDHTML
-,
+		'contentfile' => 'yearly.php',
 	),
 	'socialmedia' => array(
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				Spiral Web of Network and Affiliated Buttons
-			</div>
-
-
-			<ul>
-				<li>Social Media Pages</li>
-				<li>Temples / Ashrams</li>
-				<li>Business</li>
-				<li>NPO's We Support</li>
-				<li>Suppliers + Products that Improve The Planet</li>
-			</ul>
-
-ENDHTML
-,
+		'contentfile' => 'socialmedia.php',
 	),
 	'email' => array(
-		'content' =>	<<<ENDHTML
-
-
-			<div class="banner">
-				Email
-			</div>
-
-
-			<p>
-				Send us a letter to join our mailing list, present your interest in our org or to learn more.
-			</p>
-
-			<form>
-			OAO<br />
-
-			From: <input type="text"><br />
-
-			<textarea rows="20" cols="80">
-			</textarea>
-			<br />
-			<input type="submit" value="Cryptic" />
-
-			</form>
-
-
-ENDHTML
-,
+		'contentfile' => 'email.php',
 	),
 );
 
 
 		$page_content = '';
+		$page_contentfile = false;
 
 
 		if (array_key_exists('page', $_REQUEST)
@@ -454,7 +71,10 @@ ENDHTML
 			$request_page = $_REQUEST['page'];
 
 			if (array_key_exists($request_page, $pages)) {
-				if (array_key_exists('content', $pages[$request_page])) {
+				if (array_key_exists('contentfile', $pages[$request_page])) {
+					$page_contentfile = $pages[$request_page]['contentfile'];
+
+				} else if (array_key_exists('content', $pages[$request_page])) {
 					$page_content = $pages[$request_page]['content'];
 				} else {
 					$page_content = '[Content Not Found]';
@@ -718,9 +338,11 @@ body {
 <?php
 
 
-
-
+	if ($page_contentfile) {
+		include ('pages/' . $page_contentfile);
+	} else {
 		echo $page_content;
+	}
 
 ?>
 
