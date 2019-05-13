@@ -11,7 +11,7 @@
 body
 {
 	background-color: #000000;
-	color: #ffffff;
+	color: #501ae7;
 
 	font-family: "BookAntiqua",Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
 }
@@ -26,6 +26,7 @@ body
 /* 	border: 5px solid #4040ff; */
 	padding: 1em;
 	margin: 2em;
+
 }
 
 .mainbody {
@@ -35,7 +36,12 @@ body
 	margin: 2em;
 	font-size: 14pt;
 	border: 8px dotted #888888;
+
+	background: rgba(0, 0, 100, 0.6);
+	color: #ccef20;
 }
+
+
 
 .banner {
 	text-align: center;
@@ -52,7 +58,7 @@ p {
 }
 
 a {
-	color: #bbbbff;
+	color: #005cd0;
 }
 
 
