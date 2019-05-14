@@ -68,25 +68,31 @@ a {
  * *********
  */
 
+.topmenu {
+	width: 100%;
+}
+
 .topmenu .menu {
 	float: left;
 	padding: 0px;
-	font-size: 14pt;
 }
 .topmenu .menu .top {
-	border: 3px solid white;
+/*	border: 3px solid white; */
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	font-size: 18pt;
+	font-size: 22pt;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .dropdown {
 	display: none;
 	position: absolute;
 	margin: 0px;
-	background-color: #000060;
-	border: 3px solid white;
+/*	background-color: #000060; */
+	background-color: #002000; 
+/*	border: 3px solid white; */
 	z-index: 1;
 	list-style: none;
 	padding-left: 1em;
@@ -100,11 +106,74 @@ a {
 .dropdown li a {
 	text-decoration: none;
 }
-.dropdown li a:hover {
-	color: #ff8888;
+.dropdown li a:hover .red {
+	color: #ff0000;
+}
+.dropdown li a:hover .orange {
+	color: #ff6b00;
+}
+
+.dropdown li a:hover .yellow {
+	color: #ffff00;
+}
+.dropdown li a:hover .green {
+	color: #00ff00;
+}
+
+.dropdown li a:hover .blue {
+	color: #0000ff;
+}
+
+.dropdown li a:hover .indigo {
+	color: #00ffff;
+}
+
+.dropdown li a:hover .violet {
+	color: #ffff00;
 }
 
 .menu:hover .dropdown { display: block; }
+
+
+/*
+.menuletter {
+	display: block;
+	float: left;
+	background: rgba(255, 255, 255, 0.3);
+}
+*/
+
+/* 
+ * **********************
+ * Rainbow Color Classes:
+ ************************
+*/
+
+.menuletter.red {
+	color: #ff0000;
+}
+.menuletter.orange {
+	color: #ff6b00;
+}
+
+.menuletter.yellow {
+	color: #ffff00;
+}
+.menuletter.green {
+	color: #00ff00;
+}
+
+.menuletter.blue {
+	color: #0000ff;
+}
+
+.menuletter.indigo {
+	color: #00ffff;
+}
+
+.menuletter.violet {
+	color: #ffff00;
+}
 
 
 

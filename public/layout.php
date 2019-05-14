@@ -57,6 +57,9 @@ $pages = array(
 	'email' => array(
 		'contentfile' => 'email.php',
 	),
+	'photos' => array(
+		'contentfile' => 'photos.php',
+	),
 );
 
 
@@ -149,7 +152,7 @@ body {
 <?php
 		$dropdowns = array(
 			array(
-				'top' => "HOME",
+				'top' => 'HOME',
 				'menu' => array(
 					array(
 						'title' => 'Coven',
@@ -257,7 +260,7 @@ body {
 				'menu' => array(
 					array(
 						'title' => 'NEW',
-						'link' => ''
+						'link' => 'photos'
 					),
 					array(
 						'title' => 'OLD',
@@ -304,17 +307,88 @@ body {
 ?>
 		<div class="topmenu">
 <?php
+		$startoffset = 0;
 		foreach ($dropdowns as $dropdown) {
 
 			?>
 			<div class="menu">
-			<div class="top"><?php echo $dropdown['top']; ?></div>
+			<div class="top">
+				<?php
+			
+				$toptxt = $dropdown['top'];
+
+				$tophtml = "";
+
+				$chars = str_split($toptxt);
+
+				// loop rainbow colors with css class for each color / character
+
+				$colors = array(
+					"red",
+					"orange",
+					"yellow",
+					"green",
+					"blue",
+					"indigo",
+					"violet");
+
+
+				$offset = 0;
+
+				foreach ($chars as $char) {
+					$color = $colors[$offset];
+
+
+					$tophtml .= '<span class="menuletter ' . $color . '">' . $char . '</span>';
+					$offset ++;
+
+					if ($offset >= count($colors)) {
+						$offset = 0;
+					}
+				}
+
+				echo $tophtml;
+				?>
+			</div>
 				<ul class="dropdown">
 					<?php 
 					foreach ($dropdown['menu'] as $menu) {
 					?>
 						<li>
-							<a href="<?php echo $_SERVER['PHP_SELF'] . '?page=' . $menu['link']; ?>"><?php echo htmlentities($menu['title']); ?></a>
+							<a href="<?php echo $_SERVER['PHP_SELF'] . '?page=' . $menu['link']; ?>">
+	<?php
+
+
+							// loop rainbow colors for each letter
+			
+							$titletxt = $menu['title'];
+
+							$html = "";
+
+							$chars = str_split($titletxt);
+							$offset = $startoffset;
+
+							$startoffset ++;
+
+							if ($startoffset >= count($colors)) {
+								$startoffset = 0;
+							}
+
+							foreach ($chars as $char) {
+								$color = $colors[$offset];
+
+
+								$html .= '<span class="' . $color . '">' . $char . '</span>';
+								$offset ++;
+
+								if ($offset >= count($colors)) {
+									$offset = 0;
+								}
+							}
+
+							echo $html;
+	?>
+	</a>
 						</li>
 					<?php
 					}
