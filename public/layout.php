@@ -2,7 +2,59 @@
 	
 	<head>
 		<title>OAO</title>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jcarousel/jquery.jcarousel.js"></script>
+
+<script>
+
+(function($) {
+    $(function() {
+	    $('.jcarousel').jcarousel({
+		// Configuration goes here
+	    });
+
+        $('.jcarousel-control-prev')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        $('.jcarousel-control-next')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '+=1'
+            });
+
+	    /*
+        $('.jcarousel-pagination')
+            .on('jcarouselpagination:active', 'a', function() {
+                $(this).addClass('active');
+            })
+            .on('jcarouselpagination:inactive', 'a', function() {
+                $(this).removeClass('active');
+            })
+            .jcarouselPagination();
+	     */
+    });
+})(jQuery);
+
+</script>
+
+
 		<link href="oaostyle.css" rel="stylesheet" type="text/css" />
+
+   <link rel="stylesheet" type="text/css" href="/css/jcarousel.basic.css">
 <?php
 
 $pages = array(
@@ -106,7 +158,7 @@ $pages = array(
 ?>
 
 <style type="text/css">
-body {
+.mainbody {
 	<?php
 		$bgimages_folder = 'bgimages';
 
@@ -139,14 +191,13 @@ body {
 	</head>
 
 	<body>
+
+	<img class="bannerimage" src="/graphics/banner.png" alt="Opus Aima Obscur&aelig;">
+
+	<div class="mainbody">
+
 		<div class="maintext">
 
-		<div class="mainbanner">
-		<h1><a href="<?php echo $_SERVER['PHP_SELF'] . '?page=home'; ?>">Opus Aima Obscur&aelig;</a>
-			<br /><br />
-			[MAIN BANNER]
-		</h1>
-		</div><!-- mainbanner -->
 
 
 <?php
@@ -408,7 +459,7 @@ body {
 
 
 ?>
-<div class="mainbody">
+<div class="contentbody">
 <?php
 
 
@@ -421,7 +472,7 @@ body {
 ?>
 
 
-</div> <!-- mainbody -->
+</div> <!-- contentbody -->
 
 		<div class="footer">
 			<div class="footerlink">
@@ -443,7 +494,13 @@ body {
 
 
 
-		</div>
+
+
+		</div> <!-- maintext -->
+
+		</div> <!-- mainbody -->
+
+
 	</body>
 </html>
 
