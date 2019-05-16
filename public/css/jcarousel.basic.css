@@ -2,7 +2,13 @@
     margin: 20px auto;
     position: relative;
     border: 10px solid #fff;
-    width: 800px;
+    
+    /* full container */
+    width: 95%; 
+
+    /* fixed width */
+/*    width: 800px; */
+
     height: 600px;
 
 
