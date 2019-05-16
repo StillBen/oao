@@ -82,6 +82,9 @@ $pages = array(
 	'kitchen' => array(
 		'contentfile' => 'kitchen.php',
 	),
+	'temple' => array(
+		'contentfile' => 'temple.php',
+	),
 
 	'calendartoday' => array(
 
@@ -124,36 +127,36 @@ $pages = array(
 			$_REQUEST['page'] != ''
 		) {
 			$request_page = $_REQUEST['page'];
+		} else {
+			$request_page = 'home';
+		}
 
-			if (array_key_exists($request_page, $pages)) {
-				if (array_key_exists('contentfile', $pages[$request_page])) {
-					$page_contentfile = $pages[$request_page]['contentfile'];
 
-				} else if (array_key_exists('content', $pages[$request_page])) {
-					$page_content = $pages[$request_page]['content'];
-				} else {
-					$page_content = '[Content Not Found]';
-				}
+		if (array_key_exists($request_page, $pages)) {
+			if (array_key_exists('contentfile', $pages[$request_page])) {
+				$page_contentfile = $pages[$request_page]['contentfile'];
 
-				if (array_key_exists('bgimage', $pages[$request_page])) {
-					$page_bgimage = $pages[$request_page]['bgimage'];
-				} else {
-					$page_bgimage = '';
-				}
-
-				if (array_key_exists('mainbody_bgimage', $pages[$request_page])) {
-					$mainbody_bgimage = $pages[$request_page]['mainbody_bgimage'];
-				} else {
-					$mainbody_bgimage = '';
-				}
+			} else if (array_key_exists('content', $pages[$request_page])) {
+				$page_content = $pages[$request_page]['content'];
 			} else {
-				$page_content = "[Page Not Found]";
+				$page_content = '[Content Not Found]';
 			}
 
+			if (array_key_exists('bgimage', $pages[$request_page])) {
+				$page_bgimage = $pages[$request_page]['bgimage'];
+			} else {
+				$page_bgimage = '';
+			}
 
+			if (array_key_exists('mainbody_bgimage', $pages[$request_page])) {
+				$mainbody_bgimage = $pages[$request_page]['mainbody_bgimage'];
+			} else {
+				$mainbody_bgimage = '';
+			}
 		} else {
-			$page_content = $pages['home']['content'];
+			$page_content = "[Page Not Found]";
 		}
+
 
 ?>
 
@@ -206,6 +209,10 @@ $pages = array(
 				'top' => 'HOME',
 				'menu' => array(
 					array(
+						'title' => 'Home',
+						'link' => 'home'
+					),
+					array(
 						'title' => 'Coven',
 						'link' => 'coven'
 					),
@@ -224,6 +231,10 @@ $pages = array(
 					array(
 						'title' => 'Kitchen',
 						'link' => 'kitchen'
+					),
+					array(
+						'title' => 'Temple',
+						'link' => 'temple'
 					),
 				),
 			),

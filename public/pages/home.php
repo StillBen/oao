@@ -26,10 +26,10 @@
 
 		<div class="tabgroup">
 			<div class="tabheader">
-				<h2>TEMPLE</h2>
+				<h2><a href="layout.php?page=temple">TEMPLE</a></h2>
 			</div>
 			<div class="tabheader">
-				<h2>LIBRARY</h2>
+				<h2><a href="layout.php?page=library">LIBRARY</a></h2>
 			</div>
 
 			<div style="clear: both"></div>
