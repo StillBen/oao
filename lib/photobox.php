@@ -1,8 +1,8 @@
 <?php
 
+function photobox ($albumdir, $urldir) {
+	error_log("in photobox function...");
 ?>
-
-
 	<div class="photobox jcarousel-wrapper">
 
 			<a href="#" class="prevphoto jcarousel-control-prev">&lsaquo;</a>
@@ -11,18 +11,19 @@
 			<?php 
 
 			// read all the files in the photos directory
-			$photodir = __DIR__.'/../photos';
+			error_log("albumdir: " . $albumdir);
 			$photofiles = array();
-			if ($dh = opendir($photodir)) {
+			if ($dh = opendir($albumdir)) {
 				while (false !== ($entry = readdir($dh))) {
 					if ($entry != '.' && $entry != '..')
 						$photofiles[] = $entry;
 				}
 			} else {
-				error_log("error opening directory: " . $photodir);
+				error_log("error opening directory: " . $albumdir);
 			}
 
-			$photo_prefix = "/photos/";
+			//$photo_prefix = "/photos/";
+			$photo_prefix = $urldir;
 
 			foreach ($photofiles as $file) {
 			?>
@@ -45,4 +46,11 @@
 
 	</div> <!-- photobox jcarousel-wrapper -->
 
+<?php
+
+}
+
+
+
+?>
 

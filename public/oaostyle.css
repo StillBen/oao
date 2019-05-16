@@ -199,6 +199,11 @@ a {
 	*/
 }
 
+.jcarousel-wrapper {
+	border: none;
+/*	box-shadow: 10px 10px #8888ff; */
+}
+
 .photobox .prevphoto {
 	display: block;
 	float: left;

@@ -1,22 +1,14 @@
 <?php
+include '../lib/photobox.php';
+
+$photodir = __DIR__.'/../photos/home';
+
+$photo_url_dir = "/photos/home/";
+
+
+photobox($photodir, $photo_url_dir);
 
 ?>
-
-		<div class="photobox">
-			<div class="prevphoto">
-			Previous Event
-			</div>
-
-			<div class="mainphoto">
-				[MAINPHOTO]
-			</div>
-
-			<div class="nextphoto">
-			Next Event
-			</div>
-
-			<div style="clear: both"></div>
-		</div><!-- photobox -->
 
 		<div class="lowerbanner">
 			WHAT IS OCCURING <br />

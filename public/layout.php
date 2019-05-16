@@ -51,10 +51,10 @@
 
 </script>
 
+   <link rel="stylesheet" type="text/css" href="/css/jcarousel.basic.css">
 
 		<link href="oaostyle.css" rel="stylesheet" type="text/css" />
 
-   <link rel="stylesheet" type="text/css" href="/css/jcarousel.basic.css">
 <?php
 
 $pages = array(
@@ -112,8 +112,14 @@ $pages = array(
 	'email' => array(
 		'contentfile' => 'email.php',
 	),
-	'photos' => array(
-		'contentfile' => 'photos.php',
+	'newphotos' => array(
+		'contentfile' => 'newphotos.php',
+	),
+	'oldphotos' => array(
+		'contentfile' => 'oldphotos.php',
+	),
+	'ritualphotos' => array(
+		'contentfile' => 'ritualphotos.php',
 	),
 );
 
@@ -322,15 +328,15 @@ $pages = array(
 				'menu' => array(
 					array(
 						'title' => 'NEW',
-						'link' => 'photos'
+						'link' => 'newphotos'
 					),
 					array(
 						'title' => 'OLD',
-						'link' => ''
+						'link' => 'oldphotos'
 					),
 					array(
 						'title' => 'RITUAL',
-						'link' => ''
+						'link' => 'ritualphotos'
 					),
 				),
 			),
