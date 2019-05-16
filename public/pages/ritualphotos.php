@@ -1,6 +1,6 @@
 <?php
 
-include '../lib/photobox.php';
+include_once __DIR__.'/../lib/photobox.php';
 
 $photodir = __DIR__.'/../photos/ritual';
 
