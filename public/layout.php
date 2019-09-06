@@ -9,47 +9,39 @@
 <script>
 
 (function($) {
-    $(function() {
-	    $('.jcarousel').jcarousel({
-		// Configuration goes here
-	    });
+	$(function() {
+		$('.jcarousel').jcarousel({
+			// Configuration goes here
+		});
 
-        $('.jcarousel-control-prev')
-            .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
-            })
-            .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
-            })
-            .jcarouselControl({
-                target: '-=1'
-            });
+		$('.jcarousel-control-prev')
+			.on('jcarouselcontrol:active', function() {
+				$(this).removeClass('inactive');
+			})
+			.on('jcarouselcontrol:inactive', function() {
+				$(this).addClass('inactive');
+			})
+			.jcarouselControl({
+				target: '-=1'
+			});
 
-        $('.jcarousel-control-next')
-            .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
-            })
-            .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
-            })
-            .jcarouselControl({
-                target: '+=1'
-            });
-
-	    /*
-        $('.jcarousel-pagination')
-            .on('jcarouselpagination:active', 'a', function() {
-                $(this).addClass('active');
-            })
-            .on('jcarouselpagination:inactive', 'a', function() {
-                $(this).removeClass('active');
-            })
-            .jcarouselPagination();
-	     */
-    });
+		$('.jcarousel-control-next')
+			.on('jcarouselcontrol:active', function() {
+				$(this).removeClass('inactive');
+			})
+			.on('jcarouselcontrol:inactive', function() {
+				$(this).addClass('inactive');
+			})
+			.jcarouselControl({
+				target: '+=1'
+			});
+	});
 })(jQuery);
 
+
+
 </script>
+
 
    <link rel="stylesheet" type="text/css" href="/css/jcarousel.basic.css">
 
@@ -59,12 +51,13 @@
 
 $pages = array(
 	'home' => array(
-		'bgimage' => 'home_page_background.png',
 		'contentfile' => 'home.php',
+		'bgimage' => 'cosmos_rainbow.jpg',
 	),
 
 	'coven' => array(
 		'contentfile' => 'coven.php',
+		'bgimage' => 'old_home_page_background.png',
 	),
 
 	'training' => array(
@@ -201,7 +194,11 @@ $pages = array(
 
 	<body>
 
+<!--
+	old (1st banner):
 	<img class="bannerimage" src="/graphics/banner.png" alt="Opus Aima Obscur&aelig;">
+-->
+	<img class="bannerimage" src="/graphics/oao_banner2.jpg" alt="Opus Aima Obscur&aelig;">
 
 	<div class="mainbody">
 
