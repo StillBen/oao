@@ -105,6 +105,38 @@ $pages = array(
 	'email' => array(
 		'contentfile' => 'email.php',
 	),
+	'localinfo' => array(
+		'contentfile' => 'localinfo.php',
+	),
+	'psychicline' => array(
+		'contentfile' => 'psychicline.php',
+	),
+	'blogmagick' => array(
+		'contentfile' => 'blogmagick.php',
+	),
+	'blogseasons' => array(
+		'contentfile' => 'blogseasons.php',
+	),
+	'blogrecipies' => array(
+		'contentfile' => 'blogrecipies.php',
+	),
+	'blogastrology' => array(
+		'contentfile' => 'blogastrology.php',
+	),
+	'bloghermetics' => array(
+		'contentfile' => 'bloghermetics.php',
+	),
+	'blogpermaculture' => array(
+		'contentfile' => 'blogpermaculture.php',
+	),
+	'bloglit' => array(
+		'contentfile' => 'bloglit.php',
+	),
+	'blogpop' => array(
+		'contentfile' => 'blogpop.php',
+	),
+
+
 	'newphotos' => array(
 		'contentfile' => 'newphotos.php',
 	),
@@ -275,11 +307,11 @@ $pages = array(
 					),
 					array(
 						'title' => 'Local Info',
-						'link' => ''
+						'link' => 'localinfo'
 					),
 					array(
 						'title' => 'Psychic Line',
-						'link' => ''
+						'link' => 'psychicline'
 					),
 				),
 			),
@@ -288,35 +320,35 @@ $pages = array(
 				'menu' => array(
 					array(
 						'title' => 'MAGICK',
-						'link' => ''
+						'link' => 'blogmagick'
 					),
 					array(
-						'title' => 'Sessions',
-						'link' => ''
+						'title' => 'Seasons',
+						'link' => 'blogseasons'
 					),
 					array(
 						'title' => 'Recipies',
-						'link' => ''
+						'link' => 'blogrecipies'
 					),
 					array(
 						'title' => 'Astrology',
-						'link' => ''
+						'link' => 'blogastrology'
 					),
 					array(
 						'title' => 'Hermetics',
-						'link' => ''
+						'link' => 'bloghermetics'
 					),
 					array(
 						'title' => 'Permaculture',
-						'link' => ''
+						'link' => 'blogpermaculture'
 					),
 					array(
 						'title' => 'Lit & Poetry',
-						'link' => ''
+						'link' => 'bloglit'
 					),
 					array(
 						'title' => 'Pop Culture',
-						'link' => ''
+						'link' => 'blogpop'
 					),
 				),
 			),
